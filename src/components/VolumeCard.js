@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, CardContent, CardActions, Box, Typography, Slider,} from "@mui/material";
+import { Card, CardContent, CardActions, Box, Typography, Slider,} from '@mui/material';
 import { VolumeUp, VolumeDown } from '@mui/icons-material';
 
 const VolumeCard = () => {
@@ -24,7 +24,7 @@ return (
  
 <Card>
 
-<Box sx={{ width: 400, height: 300}}>
+<Box sx={{ width: 400, height: 200}}>
 <CardContent>
             
 <Typography variant="h5" component="div">
