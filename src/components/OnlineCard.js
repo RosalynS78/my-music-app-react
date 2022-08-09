@@ -14,6 +14,7 @@ const OnlineCard = () => {
 const handleOnline = (e) => {
     // conditional statement true or false
     // Use the target. checked property on the event object to check if a checkbox is checked in React,
+    // spread operator ( ... ) allows us to quickly copy all or part of an existing array or object into another array or object.
     setOnline({ ...online, [e.target.name]: e.target.checked })
         if (!e.target.checked) {
             setNotification({

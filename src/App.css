@@ -28,11 +28,11 @@ padding: 30px;
 }
 
 .volumeCard {
-  padding: 50px;
+  padding: 30px;
 }
 
 .soundCloudCard {
-  padding: 50px;
+  padding: 30px;
 }
 
 .dashboardImage {
@@ -40,5 +40,13 @@ padding: 30px;
   justify-content: center;
   align-items: center;
   background-color:lightgray;
-  padding: 50px;
+  padding: 30px;
 }
+
+.playCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+}
+
