@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Card, CardContent, CardActions, Box, Typography, Slider,} from '@mui/material';
+import { Card, CardContent, CardActions, Box, Typography, Slider} from '@mui/material';
 import { VolumeUp, VolumeDown } from '@mui/icons-material';
 
 const VolumeCard = () => {
     const [volume, setVolume] = useState(" ");
     const [notification, setNotification] = useState({
-        online:" ",
+        volume:" ",
     });
     const handleSound = (e, changeVolume) => {
         setVolume(changeVolume)
@@ -13,7 +13,7 @@ const VolumeCard = () => {
           setNotification({
             ...notification,
             volume:
-              "Listening to music at a high volume could cause long-term hearing loss.",
+              "System Notifications: Listening to music at a high volume could cause long-term hearing loss.",
           })
         } else {
           setNotification({ ...notification, volume: " " })
@@ -34,10 +34,10 @@ return (
 </Typography>
 <CardActions>           
 <VolumeDown />
-<Slider size="small" aria-label="Small" value={volume} onChange={handleSound} valueLabelDisplay="auto"/>
+<Slider size="small" aria-label="Small" onChange={handleSound} valueLabelDisplay="auto"/>
 <VolumeUp />
 </CardActions>
-<Typography sx={{ fontSize: 20 }} color="text.secondary" gutterBottom>
+<Typography sx={{ fontSize: 18 }} color="text.secondary" gutterBottom>
 {notification.volume}
 </Typography>
 

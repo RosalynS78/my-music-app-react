@@ -1,3 +1,4 @@
 {
-    "editor.inlayHints.fontSize": 0
+    "editor.inlayHints.fontSize": 0,
+    "editor.wordWrap": "on"
 }
